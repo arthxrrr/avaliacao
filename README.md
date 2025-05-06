@@ -1,50 +1,43 @@
-# Welcome to your Expo app 👋
+Criar um emulador no Android Studio
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Abra o Android Studio.
+Vá até Tools, depois em Device Manager.
+Clique em Create Device.
+Selecione um modelo de dispositivo (ex: Pixel 4) e clique em Next.
+Clique em Finish.
 
-## Get started
+Como habilitar o SDK no Android Studio 
 
-1. Install dependencies
+No Android Studio, vá até File, depois em Settings.
+Vá para Appearance & Behavior, depois em System Settings, e depois em Android SDK.
+Na aba SDK Platforms, marque a versão desejada (ex: Android API 33) e clique em Apply.
+A instalação será feita automaticamente. Após finalizar, clique em OK.
 
-   ```bash
-   npm install
-   ```
+Como configurar as variáveis de ambiente no Windows
 
-2. Start the app
+Pressione "Win + S" e digite "variáveis de ambiente".
+Clique em Editar variáveis de ambiente do sistema.
+Na janela que abrir, clique em Variáveis de Ambiente.
+Em Variáveis do sistema, clique em Novo e adicione:
 
-   ```bash
-   npx expo start
-   ```
+    Nome da variável: `JAVA_HOME`  
+    Valor da variável: `C:\Program Files\Java\jdk-17` (ou o caminho onde o JDK está instalado)
 
-In the output, you'll find options to open the app in a
+    Nome da variável: `ANDROID_HOME`  
+    Valor da variável: `C:\Users\SeuUsuario\AppData\Local\Android\Sdk`
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+5. Ainda em Variáveis do sistema, encontre a variável "Path", selecione e clique em Editar.
+6. Adicione os seguintes caminhos:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+   - "%ANDROID_HOME%\platform-tools"  
+   - "%ANDROID_HOME%\emulator"
 
-## Get a fresh project
+7. Clique em OK para fechar todas as janelas e aplicar as alterações.
 
-When you're ready, run:
+Como abrir o projeto no emulador
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   Abra o Android Studio.
+   Vá em Tools Device Manager.
+   Clique no botão de play ao lado do dispositivo criado para iniciar o emulador.
+   Abra o terminal no VSCode 
+   Digite npm run start
