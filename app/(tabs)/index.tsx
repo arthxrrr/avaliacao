@@ -18,7 +18,7 @@ export default function HomeScreen() {
       <ThemedView style={styles.infoContainer}>
         <ThemedText type="defaultSemiBold">Nome: Arthur Henrique Rech</ThemedText>
         <ThemedText type="defaultSemiBold">Data: 06/05/2025</ThemedText>
-        <ThemedText type="defaultSemiBold">Unidade: SENAC - 3 INFO</ThemedText>
+        <ThemedText type="defaultSemiBold">Unidade: SENAC - CODIFICAR APLICAÇÕES DISPOSTIVOS MOVEIS</ThemedText>
       </ThemedView>
     </ParallaxScrollView>
   );
